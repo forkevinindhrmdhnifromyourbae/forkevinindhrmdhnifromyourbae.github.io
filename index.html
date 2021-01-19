@@ -8,19 +8,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
     <link href="fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
-<!--
-Tooplate 2118 Chilling Cafe
-https://www.tooplate.com/view/2118-chilling-cafe
--->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/venom-button.min.css">
+    <script type="text/javascript" src="js/venom-button.min.js"></script>
   </head>
   <body>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <a href="https://api.whatsapp.com/send?phone=6281806942134&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-      <i class="fa fa-whatsapp my-float"></i>
-      </a>
-    <div class="tm-container">
+      <!-- Header -->
+      <div class="tm-container">
       <div class="tm-text-white tm-page-header-container">
-        <img class="tm-page-header-container" src="https://img.icons8.com/dotty/80/ffffff/instant-camera.png"/>
+        <img class="tm-page-header-container" src="https://img.icons8.com/dotty/64/ffffff/instant-camera.png"/>
         <h1 class="tm-page-header-container">Gpol ID</h1>
       </div>
       <div class="tm-main-content">
@@ -31,7 +29,7 @@ https://www.tooplate.com/view/2118-chilling-cafe
           <h2 class="tm-section-header">Special Items</h2>
           <div class="tm-special-items">
             <figure class="tm-special-item">
-              <img src="img/pol-2.png" alt="Image" class="tm-special-item-img1" />
+              <img src="img/pol_2.jpg" alt="Image" class="tm-special-item-img1" />
               <figcaption>
                 <span class="tm-item-name">Potrait</span>
                 <span class="tm-item-price">19k/27 Foto</span>
@@ -45,7 +43,7 @@ https://www.tooplate.com/view/2118-chilling-cafe
               </figcaption>
             </figure>
             <figure class="tm-special-item">
-              <img src="img/pol-5.png" alt="Image" class="tm-special-item-img1" />
+              <img src="img/pol_5.jpg" alt="Image" class="tm-special-item-img1" />
               <figcaption>
                 <span class="tm-item-name">Wide</span>
                 <span class="tm-item-price">20k/16 Foto</span>
@@ -80,6 +78,51 @@ https://www.tooplate.com/view/2118-chilling-cafe
         </p>
       </footer>
     </div>
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <div id="myButton"></div>
   </body>
+  <script type="text/javascript">
+
+    $('#myButton').venomButton({
+        phone: '6281806942134',
+        popupMessage: 'Hello, how can we help you?',
+        message: "I'd like to order a polaroid",
+        showPopup: true,
+        position: "right",
+        linkButton: false,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#3a4a58',
+        backgroundColor: '',
+        buttonImage: '<img src="https://img.icons8.com/wired/64/ffffff/whatsapp.png" />'
+    });
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
 </html>
