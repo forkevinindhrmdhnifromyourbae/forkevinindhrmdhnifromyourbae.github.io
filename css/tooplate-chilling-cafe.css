@@ -14,7 +14,7 @@ https://www.tooplate.com/view/2118-chilling-cafe
 */
 
 body {
-  background-color: #3a4a58;
+  background-image: linear-gradient(to bottom right,#353a5f, #9ebaf3);
   color: #8c8c8c;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 17px;
@@ -27,20 +27,30 @@ body {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
-.tm-main-content { background-color: #ffffff; }
+.tm-main-content { 
+  background-image: linear-gradient(to top left, #353a5f, #9ebaf3);
+  width: 400;
+  border-radius: 20px;
+}
 
 #tm-intro-img {
   background-image: url(../img/pol-1.jpg);
   background-position: center;
   background-size: cover;
   min-height: 425px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .tm-text-white { color: white; }
 
-.tm-page-header-container { text-align: center; }
+.tm-page-header-container { 
+  text-align: center;
+  color: #9ebaf3;
+}
 
 .tm-page-header {
   display: inline-block;
@@ -66,7 +76,7 @@ body {
 }
 
 .tm-section-header {
-  color: #996633;
+  color: #353a5f;
   text-align: center;
   font-weight: 400;
   font-size: 1.5rem;
@@ -122,7 +132,10 @@ p {
 
 .tm-mb-0 { margin-bottom: 0; }
 img { max-width: 100%; }
-figure { margin: 0; }
+figure { 
+  margin: 0; 
+  text-align: center;
+}
 figcaption { text-align: center; }
 
 figcaption span {
@@ -135,17 +148,18 @@ figcaption span {
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #353a5f;
 }
 
 .tm-special-items {
   display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -15px hidden;
+  margin-right: -15px hidden;
 }
 
 .tm-special-item {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px ;
+  padding-right: 30px;
 }
 
 hr {
@@ -236,24 +250,9 @@ a { transition: all 0.3s ease; }
 .tm-special-item-img1 {
   width: 400px;
   align-items: center;
+  border-radius: 10px;
 }
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.tm-item-price {
+  color: #9ebaf3;
 }
-
-.my-float{
-	margin-top:16px;
-}
-
